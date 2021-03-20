@@ -8,7 +8,7 @@ from cherrypy.lib.static import serve_file
 
 
 def zipAllOutput(filename):
-    # create a ZipFile object
+    # create a ZipFile object test
     with ZipFile(filename, 'w') as zipObj:
         # Iterate over all the files in directory
         for folderName, subfolders, filenames in os.walk(os.getcwd() + "/output"):
