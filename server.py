@@ -111,3 +111,6 @@ class AppServer:
             }
         }
         cherrypy.quickstart(RESTfulServicePOLYCY110(), '/', conf)
+
+    def __call__(self, *args, **kwargs):
+        self.run()
