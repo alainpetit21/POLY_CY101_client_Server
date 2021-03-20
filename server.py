@@ -111,9 +111,3 @@ class AppServer:
             }
         }
         cherrypy.quickstart(RESTfulServicePOLYCY110(), '/', conf)
-
-
-application = app = AppServer()
-
-if __name__ == "__main__":
-    app.run()
