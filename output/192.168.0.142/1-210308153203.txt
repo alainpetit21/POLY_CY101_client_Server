@@ -1,3 +1,0 @@
-/home/alainpetit/secret/secret.txt
-
-/home/alainpetit/secret/notSecret.txt

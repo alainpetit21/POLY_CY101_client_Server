@@ -1,4 +1,2 @@
-0
-1
-2-/home/alainpetit/secret/secret.txt\n
 3
+9
