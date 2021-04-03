@@ -1,5 +1,10 @@
 0
 1
-2-/home/alainpetit/secret/secret.txt
+0
+2-/home/alainpetit/secret/ListeDeClientRadiotron.csv
+2-/home/alainpetit/secret/ListeDePaiementRadiotron.csv
+2-/home/alainpetit/secret/ListeDesAccesRadiotron.csv
+2-/home/alainpetit/secret/NouveauxProduitsRadiotron.docx
+2-/home/alainpetit/secret/TalonDePaieRadiotron.xlsx
 3
 9
